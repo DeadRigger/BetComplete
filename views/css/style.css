@@ -1,0 +1,441 @@
+body{
+    background-color: #100C3B
+}
+
+.blur{
+    filter: blur(10px);
+}
+
+.border-block{
+    border:1px solid #FA6B00;
+    border-top: none;
+}
+
+.border-header{
+    border-bottom:1px solid #FA6B00;
+}
+
+.border-nav{
+    border-left:1px solid #FA6B00;
+    border-right:1px solid #FA6B00;
+}
+
+button:focus{
+    outline: none;
+}
+
+article{
+    min-height: 80%;
+}
+
+/*Уведомления*/
+@media (max-width: 575px){
+    #notifies{
+        top:0;
+    }
+}
+
+#notifies{
+    position:fixed;
+    width:auto;
+    height:auto;
+    top:60px;
+    right: 0;
+    z-index: 1051;
+}
+
+.alert{
+    margin: 5px;
+}
+
+/*Верхняя панель*/
+@media (max-width: 575px){
+    #reg div.form-group label{
+        text-align: left;
+    }
+}
+
+#sys_enter{
+    width: 100%; 
+    text-align: right
+}
+
+#sys_enter{
+    margin: auto 5px;
+}
+
+/*Профиль пополнение*/
+.container .repl{
+    margin: 5px auto;
+    width: 200px;
+    height: 100px;
+}
+
+.pay_systems{
+    line-height: 3;
+}
+
+.repl .card-body{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*Закрытие профиля*/
+@media (max-width: 519px){
+    #close_profile{
+        font-size: 5em;
+        color: orange;
+        position: absolute;
+        right: 0;
+        top: 82px;
+    }
+}
+
+@media (min-width: 520px){
+    #close_profile{
+        font-size: 5em;
+        color: orange;
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+}
+
+/*Окно трансляции*/
+.translation{
+    padding-top: 20px;
+}
+
+.transplayer{
+}
+
+#head-translation{
+    font-size: 1.5em;
+}
+
+/*Блок информации о матче*/
+
+@media (max-width: 767px){
+    #nav-live .match:first-child,#nav-ordinar .match:first-child,#nav-express .match:first-child{
+        display: none;
+    }
+    
+    .right_team, .left_team{
+        position: absolute;
+        width: 33%;
+        padding-left: 5px;
+        padding-right: 5px;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+    
+    .right_team{
+        right: 0;
+    }
+    
+    .left_team{
+        left: 0;
+    }
+    
+    .second-data{
+        padding-left: 33%;
+        padding-right: 33%;
+    }
+    
+    .second-data p, .text-event, .time_bet{
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+    
+    .container{
+        max-width: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.match{
+	overflow: hidden;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-left:1px solid #FA6B00;
+    border-right:1px solid #FA6B00;
+    border-top: none;
+    
+}
+
+.hov:hover{
+	background-color: gray;
+}
+
+.category{
+	line-height: 3;
+}
+
+.second-data{
+	float: left;
+    height: 3em;
+    line-height: 1.5em;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    text-align: center
+}
+
+.left_team{
+	float: left;
+    height: 3em;
+    line-height: 3em;
+}
+
+.right_team{
+	float: left;
+    height: 3em;
+    line-height: 3em;
+	text-align: right;
+}
+
+.left_team p{
+	float: left;
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.right_team p{
+	margin-right: 5px;
+	float: right;
+	font-size: 20px;
+}
+
+.left_team img{
+	margin-left: 10px;
+	float: left;
+}
+
+.right_team img{
+	margin-right: 10px;
+	float: right;
+}
+
+.match img{
+	height: 2.5em;
+}
+
+.info{
+	float: left;
+    height: 3em;
+	text-align: center;
+	border-radius: 15px;
+    border-color: black;
+    border-width: .25px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#reset{
+	border-radius: 10px;
+	height: 17px;
+}
+
+.col-no-pad{
+    padding: 0 !important;
+}
+
+.ratio{
+    float: left;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.ratio-block{
+    float: left;
+    font-size: 1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ratio:hover{
+    box-shadow: 0 6px 12px rgba(153,255,107,.69),0 4px 6px rgba(0,0,0,.36),inset 0 0 8px rgba(153,255,107,.3),inset 0 -1px 0 #99FF6B;
+    background-color: #99FF6B;
+    color:white;
+}
+
+.time_bet{
+    line-height: 1.5;
+}
+
+.text-event{
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+/*События*/
+.event-team{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 5px auto;
+    display: flex;
+}
+
+.event-team div{
+    margin: 5px 0;
+}
+
+@media (max-width: 767px){
+    .event-team{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        border: 1px solid white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        margin: 5px auto;
+        display: flex;
+    }
+    
+    .event-team div p{
+        max-width: 60%;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+    
+    #nav-event .match .col-md-9{
+        text-align: center
+    }
+}
+
+/*Навигация поматчам*/
+#nav-tab{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#spinner{
+    font-size: 2em;
+    color: orange;
+}
+
+@media (max-width: 575px){
+    #nav-tab{
+        padding-left: 15px;
+        padding-right: 32px;
+    }
+    
+    #nav-tab .nav-point{
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    #nav-tab .nav-point:hover{
+        box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        color: #495057 !important;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        border-radius: 5px;
+    }
+    
+    #spinner{
+        position: fixed;
+        right: 10px;
+        top: auto;
+        z-index: 2;
+        color: orange;
+    }
+}
+
+#nav-tab .nav-point{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav-point.nav-item.nav-link{
+    color: #ffc107;
+}
+
+/*Кнопка из input radio*/
+#rate_l, #rate_r,input[name='paymentType'] {
+    position: absolute;
+    left: -9999px;
+}
+
+/*Футер*/
+footer{
+    margin-top: 10px;
+    background: linear-gradient(to bottom, #343a40 50%, #100C3B);
+}
+
+.footer .wrapper {
+    display: flex;
+	flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer .wrapper > a {
+    width: 10%;
+    min-width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer img{
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto
+}
+
+footer img:hover{
+    filter: none !important;
+}
+
+/*Модальное окно*/
+#match-data .img-right,#match-data .img-left{
+    width: 100%;
+    max-width: 100px;
+    height: auto
+}
+
+.modal input::-webkit-input-placeholder{
+    font-size: large;
+} 
+
+#count_money{
+    width: 20%;
+    height: 34px;
+    font-size: large;
+}
+
+#info_category, #info_event{
+    margin-bottom: 0;
+}
+
+#input-put{
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+#info_match{
+    margin-bottom: 10px;
+}
+
+.left-rate:not(:disabled):not(.disabled).active, .right-rate:not(:disabled):not(.disabled).active{
+    color: #212529;
+    background-color: #a37e00;
+    border-color: #966500;
+}
